@@ -1,0 +1,1836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.1.0" type="incidents">
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="34"
+            replacement="36"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="20"
+            column="9"
+            startOffset="584"
+            endLine="20"
+            endColumn="23"
+            endOffset="598"/>
+    </incident>
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of Gradle than 9.3.1 is available: 9.8.0">
+        <fix-replace
+            description="Update to 9.8.0"
+            oldString="9.3.1"
+            replacement="9.8.0"
+            priority="0"/>
+        <location
+            file="$HOME/Documents/dev/2026/ped/ped-android/gradle/wrapper/gradle-wrapper.properties"
+            line="3"
+            column="17"
+            startOffset="81"
+            endLine="3"
+            endColumn="80"
+            endOffset="144"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of `compileSdk` than 34 is available: 36">
+        <fix-replace
+            description="Set compileSdk to 36"
+            oldString="34"
+            replacement="36"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="15"
+            column="5"
+            startOffset="417"
+            endLine="15"
+            endColumn="20"
+            endOffset="432"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose:compose-bom than 2024.06.00 is available: 2026.09.00">
+        <fix-replace
+            description="Change to 2026.09.00"
+            family="Update versions"
+            oldString="2024.06.00"
+            replacement="2026.09.00"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="67"
+            column="29"
+            startOffset="1801"
+            endLine="67"
+            endColumn="70"
+            endOffset="1842"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.19.1">
+        <fix-replace
+            description="Change to 1.19.1"
+            family="Update versions"
+            oldString="1.13.1"
+            replacement="1.19.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="68"
+            column="20"
+            startOffset="1864"
+            endLine="68"
+            endColumn="51"
+            endOffset="1895"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-compose than 1.9.0 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.9.0"
+            replacement="1.13.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="69"
+            column="20"
+            startOffset="1916"
+            endLine="69"
+            endColumn="62"
+            endOffset="1958"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.exifinterface:exifinterface than 1.3.7 is available: 1.4.2">
+        <fix-replace
+            description="Change to 1.4.2"
+            family="Update versions"
+            oldString="1.3.7"
+            replacement="1.4.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="70"
+            column="20"
+            startOffset="1979"
+            endLine="70"
+            endColumn="64"
+            endOffset="2023"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.3 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.8.3"
+            replacement="2.11.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="75"
+            column="20"
+            startOffset="2277"
+            endLine="75"
+            endColumn="74"
+            endOffset="2331"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.3 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.8.3"
+            replacement="2.11.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="76"
+            column="20"
+            startOffset="2352"
+            endLine="76"
+            endColumn="72"
+            endOffset="2404"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose.ui:ui-test-manifest than 1.6.8 is available: 1.12.1">
+        <fix-replace
+            description="Change to 1.12.1"
+            family="Update versions"
+            oldString="1.6.8"
+            replacement="1.12.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="82"
+            column="25"
+            startOffset="2708"
+            endLine="82"
+            endColumn="69"
+            endOffset="2752"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose.ui:ui-test-junit4 than 1.6.8 is available: 1.12.1">
+        <fix-replace
+            description="Change to 1.12.1"
+            family="Update versions"
+            oldString="1.6.8"
+            replacement="1.12.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="86"
+            column="31"
+            startOffset="2983"
+            endLine="86"
+            endColumn="73"
+            endOffset="3025"/>
+    </incident>
+
+    <incident
+        id="NewerVersionAvailable"
+        severity="warning"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-android than 1.8.1 is available: 1.11.0">
+        <fix-replace
+            description="Change to 1.11.0"
+            family="Update versions"
+            oldString="1.8.1"
+            replacement="1.11.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="77"
+            column="20"
+            startOffset="2425"
+            endLine="77"
+            endColumn="76"
+            endOffset="2481"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionRepository.kt"
+                    startOffset="1622"
+                    endOffset="1627"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with (commit = true) {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement="(commit = true) {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionRepository.kt"
+                    startOffset="1627"
+                    endOffset="1628"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionRepository.kt"
+                    startOffset="1628"
+                    endOffset="1629"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".commit()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionRepository.kt"
+                    startOffset="1858"
+                    endOffset="1867"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionRepository.kt"
+            line="26"
+            column="15"
+            startOffset="1613"
+            endLine="26"
+            endColumn="30"
+            endOffset="1628"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+                    startOffset="6757"
+                    endOffset="6762"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with (commit = true) {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement="(commit = true) {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+                    startOffset="6762"
+                    endOffset="6763"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+                    startOffset="6763"
+                    endOffset="6764"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".commit()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+                    startOffset="6785"
+                    endOffset="6794"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+            line="133"
+            column="87"
+            startOffset="6746"
+            endLine="133"
+            endColumn="104"
+            endOffset="6763"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+                    startOffset="25040"
+                    endOffset="25045"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+                    startOffset="25045"
+                    endOffset="25046"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+                    startOffset="25046"
+                    endOffset="25047"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".apply()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+                    startOffset="25091"
+                    endOffset="25099"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionScreen.kt"
+            line="345"
+            column="25"
+            startOffset="25023"
+            endLine="345"
+            endColumn="48"
+            endOffset="25046"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SQLiteDatabase.transaction` instead?">
+        <fix-composite
+            description="Replace with the transaction extension function"
+            family="Replace with the transaction extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with transaction"
+                robot="true"
+                independent="true"
+                oldString="beginTransaction("
+                replacement="transaction"
+                reformat="value"
+                imports="androidx.core.database.sqlite.transaction"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3288"
+                    endOffset="3305"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3305"
+                    endOffset="3306"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;            db.setTransactionSuccessful()&#xA;&quot;"
+                robot="true"
+                independent="true"
+                oldString="            db.setTransactionSuccessful()&#xA;"
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="4216"
+                    endOffset="4258"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;db.&quot;"
+                robot="true"
+                independent="true"
+                oldString="db."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3787"
+                    endOffset="3790"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;db.&quot;"
+                robot="true"
+                independent="true"
+                oldString="db."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="4154"
+                    endOffset="4157"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString="db.endTransaction()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="4278"
+                    endOffset="4297"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3307"
+                    endOffset="3307"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3321"
+                    endOffset="3321"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3490"
+                    endOffset="3490"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3612"
+                    endOffset="3612"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3728"
+                    endOffset="3728"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3765"
+                    endOffset="3765"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3962"
+                    endOffset="3962"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="3983"
+                    endOffset="3983"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="4132"
+                    endOffset="4132"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+                    startOffset="4202"
+                    endOffset="4202"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/InspectionStore.kt"
+            line="52"
+            column="9"
+            startOffset="3285"
+            endLine="52"
+            endColumn="30"
+            endOffset="3306"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `Bitmap.scale` instead?">
+        <fix-replace
+            description="Replace with the scale extension function"
+            family="Replace with the scale extension function"
+            robot="true"
+            independent="true"
+            oldString="Bitmap.createScaledBitmap(this, targetWidth, targetHeight, true)"
+            replacement="this.scale(targetWidth, targetHeight)"
+            reformat="value"
+            imports="androidx.core.graphics.scale"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/MainActivity.kt"
+                startOffset="32381"
+                endOffset="32445"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/MainActivity.kt"
+            line="713"
+            column="12"
+            startOffset="32381"
+            endLine="713"
+            endColumn="76"
+            endOffset="32445"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="700"
+                    endOffset="705"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="705"
+                    endOffset="706"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="706"
+                    endOffset="707"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".apply()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="734"
+                    endOffset="742"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="23"
+            column="9"
+            startOffset="694"
+            endLine="23"
+            endColumn="21"
+            endOffset="706"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="806"
+                    endOffset="811"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="811"
+                    endOffset="812"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="812"
+                    endOffset="813"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".apply()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="847"
+                    endOffset="855"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="27"
+            column="9"
+            startOffset="800"
+            endLine="27"
+            endColumn="21"
+            endOffset="812"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="900"
+                    endOffset="905"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="905"
+                    endOffset="906"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="906"
+                    endOffset="907"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".apply()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="924"
+                    endOffset="932"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="31"
+            column="9"
+            startOffset="894"
+            endLine="31"
+            endColumn="21"
+            endOffset="906"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SQLiteDatabase.transaction` instead?">
+        <fix-composite
+            description="Replace with the transaction extension function"
+            family="Replace with the transaction extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with transaction"
+                robot="true"
+                independent="true"
+                oldString="beginTransaction("
+                replacement="transaction"
+                reformat="value"
+                imports="androidx.core.database.sqlite.transaction"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6266"
+                    endOffset="6283"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6283"
+                    endOffset="6284"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;            db.setTransactionSuccessful()&#xA;&quot;"
+                robot="true"
+                independent="true"
+                oldString="            db.setTransactionSuccessful()&#xA;"
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6463"
+                    endOffset="6505"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;db.&quot;"
+                robot="true"
+                independent="true"
+                oldString="db."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6311"
+                    endOffset="6314"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with this"
+                robot="true"
+                independent="true"
+                oldString="db"
+                replacement="this"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6439"
+                    endOffset="6441"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString="db.endTransaction()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6537"
+                    endOffset="6556"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6285"
+                    endOffset="6285"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6299"
+                    endOffset="6299"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6363"
+                    endOffset="6363"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6409"
+                    endOffset="6409"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6449"
+                    endOffset="6449"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="6505"
+                    endOffset="6505"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="158"
+            column="9"
+            startOffset="6263"
+            endLine="158"
+            endColumn="30"
+            endOffset="6284"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="7552"
+                    endOffset="7557"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with (commit = true) {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement="(commit = true) {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="7557"
+                    endOffset="7558"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="7558"
+                    endOffset="7559"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".commit()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="7590"
+                    endOffset="7599"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="198"
+            column="15"
+            startOffset="7543"
+            endLine="198"
+            endColumn="30"
+            endOffset="7558"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="7941"
+                    endOffset="7946"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with (commit = true) {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement="(commit = true) {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="7946"
+                    endOffset="7947"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="7947"
+                    endOffset="7948"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".commit()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="8026"
+                    endOffset="8035"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="203"
+            column="15"
+            startOffset="7932"
+            endLine="203"
+            endColumn="30"
+            endOffset="7947"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="15928"
+                    endOffset="15933"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="15933"
+                    endOffset="15934"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="15934"
+                    endOffset="15935"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".apply()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="15972"
+                    endOffset="15980"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="418"
+            column="13"
+            startOffset="15922"
+            endLine="418"
+            endColumn="25"
+            endOffset="15934"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="17004"
+                    endOffset="17009"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="17009"
+                    endOffset="17010"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="17023"
+                    endOffset="17024"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".apply()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="17105"
+                    endOffset="17113"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="17011"
+                    endOffset="17011"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="17042"
+                    endOffset="17042"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="452"
+            column="9"
+            startOffset="16998"
+            endLine="452"
+            endColumn="21"
+            endOffset="17010"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="20489"
+                    endOffset="20494"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="20494"
+                    endOffset="20495"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="20495"
+                    endOffset="20496"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".apply()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="20538"
+                    endOffset="20546"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="559"
+            column="13"
+            startOffset="20483"
+            endLine="559"
+            endColumn="25"
+            endOffset="20495"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SharedPreferences.edit` instead?">
+        <fix-composite
+            description="Replace with the edit extension function"
+            family="Replace with the edit extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with edit"
+                robot="true"
+                independent="true"
+                oldString="edit("
+                replacement="edit"
+                reformat="value"
+                imports="androidx.core.content.edit"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="21598"
+                    endOffset="21603"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="21603"
+                    endOffset="21604"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;.&quot;"
+                robot="true"
+                independent="true"
+                oldString="."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="21604"
+                    endOffset="21605"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString=".apply()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+                    startOffset="21647"
+                    endOffset="21655"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/data/Storage.kt"
+            line="588"
+            column="13"
+            startOffset="21592"
+            endLine="588"
+            endColumn="25"
+            endOffset="21604"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `SQLiteDatabase.transaction` instead?">
+        <fix-composite
+            description="Replace with the transaction extension function"
+            family="Replace with the transaction extension function"
+            robot="true"
+            independent="true">
+            <fix-replace
+                description="Replace with transaction"
+                robot="true"
+                independent="true"
+                oldString="beginTransaction("
+                replacement="transaction"
+                reformat="value"
+                imports="androidx.core.database.sqlite.transaction"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="2680"
+                    endOffset="2697"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with  {"
+                robot="true"
+                independent="true"
+                oldString=")"
+                replacement=" {"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="2697"
+                    endOffset="2698"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;            db.setTransactionSuccessful()&#xA;&quot;"
+                robot="true"
+                independent="true"
+                oldString="            db.setTransactionSuccessful()&#xA;"
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="4242"
+                    endOffset="4284"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;db.&quot;"
+                robot="true"
+                independent="true"
+                oldString="db."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="2907"
+                    endOffset="2910"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;db.&quot;"
+                robot="true"
+                independent="true"
+                oldString="db."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3486"
+                    endOffset="3489"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;db.&quot;"
+                robot="true"
+                independent="true"
+                oldString="db."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3794"
+                    endOffset="3797"/>
+            </fix-replace>
+            <fix-replace
+                description="Delete &quot;db.&quot;"
+                robot="true"
+                independent="true"
+                oldString="db."
+                replacement=""
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3995"
+                    endOffset="3998"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with }"
+                robot="true"
+                independent="true"
+                oldString="db.endTransaction()"
+                replacement="}"
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="4304"
+                    endOffset="4323"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="2699"
+                    endOffset="2699"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="2713"
+                    endOffset="2713"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="2752"
+                    endOffset="2752"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="2797"
+                    endOffset="2797"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="2891"
+                    endOffset="2891"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="2954"
+                    endOffset="2954"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3066"
+                    endOffset="3066"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3109"
+                    endOffset="3109"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3174"
+                    endOffset="3174"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3229"
+                    endOffset="3229"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3346"
+                    endOffset="3346"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3470"
+                    endOffset="3470"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3543"
+                    endOffset="3543"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3769"
+                    endOffset="3769"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3883"
+                    endOffset="3883"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3897"
+                    endOffset="3897"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with     "
+                robot="true"
+                independent="true"
+                oldString=""
+                replacement="    "
+                priority="0">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+                    startOffset="3983"
+                    endOffset="3983"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ped/mobile/inspection/VehicleCatalogueStore.kt"
+            line="38"
+            column="9"
+            startOffset="2677"
+            endLine="38"
+            endColumn="30"
+            endOffset="2698"/>
+    </incident>
+
+</incidents>

@@ -1,0 +1,213 @@
+10-05 20:29:13.918 27904 27925 I TestRunner: started: offlinePickerKeepsSavedQueueSnapshotAndAccountIsolation(com.ped.mobile.inspection.PedVoyageTest)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: enableTracing failed. You may need to upgrade your androidx.tracing:tracing version
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: java.lang.NoSuchMethodError: No static method forceEnableAppTracing()V in class Landroidx/tracing/Trace; or its super classes (declaration of 'androidx.tracing.Trace' appears in /data/app/~~pJanLYbE2EyZ1RS4sb5KTw==/com.ped.mobile.review-LMWJ0c3EFIbpJBxJaVSIDw==/base.apk!classes9.dex)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.platform.tracing.AndroidXTracer.enableTracing(AndroidXTracer.java:57)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.platform.tracing.Tracing.<init>(Tracing.java:53)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.platform.tracing.Tracing.<clinit>(Tracing.java:49)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule.providesTracing(BaseLayerModule.java:190)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule_ProvidesTracingFactory.providesTracing(BaseLayerModule_ProvidesTracingFactory.java:41)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule_ProvidesTracingFactory.get(BaseLayerModule_ProvidesTracingFactory.java:33)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule_ProvidesTracingFactory.get(BaseLayerModule_ProvidesTracingFactory.java:11)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.core.internal.deps.dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.base.IdlingResourceRegistry_Factory.get(IdlingResourceRegistry_Factory.java:38)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.base.IdlingResourceRegistry_Factory.get(IdlingResourceRegistry_Factory.java:12)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.core.internal.deps.dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.DaggerBaseLayerComponent$BaseLayerComponentImpl.idlingResourceRegistry(DaggerBaseLayerComponent.java:279)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.espresso.Espresso.<clinit>(Espresso.java:64)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.compose.ui.test.junit4.EspressoLink_androidKt.runEspressoOnIdle(EspressoLink.android.kt:92)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.compose.ui.test.junit4.EspressoLink.runUntilIdle(EspressoLink.android.kt:79)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:320)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:271)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:467)
+10-05 20:29:13.939 27904 27925 E AndroidXTracer: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2627)
+10-05 20:29:13.939 27904 27925 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+10-05 20:29:13.944 27904 27925 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.junit4.EspressoLink@60c8b59]
+10-05 20:29:13.954 27904 27925 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-05 20:29:13.958 27904 27925 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-05 20:29:13.963   686   800 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@20f8209 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-05 20:29:13.970   533   774 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+10-05 20:29:13.976  1112  1112 D RecentsView: onTaskDisplayChanged: 120, new displayId = 0
+10-05 20:29:14.011  1112  1112 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-05 20:29:14.037   563   677 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+10-05 20:29:14.037   563   677 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+10-05 20:29:14.053   969  1111 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda12@b01322e
+10-05 20:29:14.073 27904 27904 D DesktopExperienceFlags: Toggle override initialized to: false
+10-05 20:29:14.132 27904 27904 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@26c7dfc in: PRE_ON_CREATE
+10-05 20:29:14.133 27904 27904 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-05 20:29:14.141 27904 27904 E d.mobile.review: Invalid resource ID 0x00000000.
+10-05 20:29:14.169   686   869 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+10-05 20:29:14.181 27904 27904 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-05 20:29:14.188  1112  1112 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-05 20:29:14.195  1112  1112 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-05 20:29:14.215 27904 27904 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@26c7dfc in: CREATED
+10-05 20:29:14.217 27904 27904 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@26c7dfc
+10-05 20:29:14.222 27904 27904 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@26c7dfc in: STARTED
+10-05 20:29:14.224 27904 27904 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@26c7dfc
+10-05 20:29:14.268 27904 27904 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@26c7dfc in: RESUMED
+10-05 20:29:14.271 27904 27904 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@26c7dfc
+10-05 20:29:14.379 27904 27904 W HWUI    : Unknown dataspace 0
+10-05 20:29:14.384 27904 27928 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+10-05 20:29:14.385 27904 27928 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+10-05 20:29:14.394 27904 27928 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-05 20:29:14.395 27904 27928 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-05 20:29:14.458 27904 27904 D VRI[ComponentActivity]: WindowInsets changed: 1080x2400 statusBars:[0,69,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,69,0,92]
+10-05 20:29:14.466 27904 27904 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda12@413d453
+10-05 20:29:14.479   533   593 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10253 pid=0
+10-05 20:29:14.479   533   593 D libbinder.PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10253 => denied (311 us)
+10-05 20:29:14.485   533   593 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10253 pid=0
+10-05 20:29:14.485   533   593 D libbinder.PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10253 => denied (5777 us)
+10-05 20:29:14.485   533   593 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10253 pid=0
+10-05 20:29:14.485   533   593 D libbinder.PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10253 => denied (330 us)
+10-05 20:29:14.603   686  1021 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10253 pid=0
+10-05 20:29:14.604   686  1021 D libbinder.PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10253 => denied (1583 us)
+10-05 20:29:14.616   686  1021 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10253 pid=0
+10-05 20:29:14.616   686  1021 D libbinder.PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10253 => denied (11412 us)
+10-05 20:29:14.616   686  1021 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10253 pid=0
+10-05 20:29:14.616   686  1021 D libbinder.PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10253 => denied (16 us)
+10-05 20:29:14.644   686   731 I ActivityTaskManager: Displayed com.ped.mobile.review/androidx.activity.ComponentActivity for user 0: +678ms
+10-05 20:29:14.697   686   834 I ImeTracker: com.ped.mobile.review:f34b0896: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+10-05 20:29:14.712 27904 27904 I ImeTracker: com.ped.mobile.review:f34b0896: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-05 20:29:14.716  1458  1458 I SubtypeOperator: SubtypeOperator$1.onUnbindInput():43
+10-05 20:29:14.727  1458  1458 I SubtypeOperator: SubtypeOperator$1.onBindInput():33
+10-05 20:29:14.728  1458  1458 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2404
+10-05 20:29:14.734   686  1825 I ImeTracker: system_server:d037d47c: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false
+10-05 20:29:14.736   686   734 I ImeTracker: system_server:d037d47c: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-05 20:29:14.770  1458  1458 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1552 onStartInput(EditorInfo{EditorInfo{packageName=com.ped.mobile.review, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-05 20:29:14.781  1458  1458 W LatinInputMethodServiceBase: LatinInputMethodServiceBase.updateInputViewCoverNavigation():365 Null input view, cannot update padding!
+10-05 20:29:14.811  1458 27563 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+10-05 20:29:14.882 25817 25817 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+10-05 20:29:14.917   686   947 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-05 20:29:14.928  1458 27559 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+10-05 20:29:14.942   563   677 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+10-05 20:29:14.942   563   677 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+10-05 20:29:14.955  4075  4084 I FontLog : (REDACTED) Received query %s, URI %s
+10-05 20:29:14.962  4075  4084 I FontLog : (REDACTED) Query [%s] resolved to %s
+10-05 20:29:14.982   969  1111 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+10-05 20:29:14.988  4075  4084 I FontLog : (REDACTED) Fetch %s end status %s
+10-05 20:29:15.018  4075  4084 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+10-05 20:29:15.038 27904 27937 I HWUI    : Using FreeType backend (prop=Auto)
+10-05 20:29:15.088  4075  4084 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+10-05 20:29:16.372 27904 27904 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-05 20:29:16.372 27904 27904 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-05 20:29:16.467 27904 27904 D CompatChangeReporter: Compat change id reported: 289878283; UID 10253; state: ENABLED
+10-05 20:29:16.494 27904 27904 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda12@99d653d
+10-05 20:29:16.639   686   834 I ImeTracker: com.ped.mobile.review:7738cf6c: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+10-05 20:29:16.649   686  1836 I ImeTracker: system_server:dbd4b301: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false
+10-05 20:29:16.653  1458  1458 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2404
+10-05 20:29:16.654   686   734 I ImeTracker: system_server:dbd4b301: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-05 20:29:16.655  1458  1458 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1552 onStartInput(EditorInfo{EditorInfo{packageName=com.ped.mobile.review, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-05 20:29:16.656  1458  1458 W LatinInputMethodServiceBase: LatinInputMethodServiceBase.updateInputViewCoverNavigation():365 Null input view, cannot update padding!
+10-05 20:29:16.657  1458 27563 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+10-05 20:29:16.659 27904 27904 I ImeTracker: com.ped.mobile.review:7738cf6c: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-05 20:29:16.659  1458 27559 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+10-05 20:29:16.876   686  1836 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@3c45aa8 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-05 20:29:16.893   533   654 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+10-05 20:29:16.919  1112  1112 D RecentsView: onTaskDisplayChanged: 121, new displayId = 0
+10-05 20:29:16.934   563   677 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+10-05 20:29:16.934   563   677 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+10-05 20:29:16.939   686   734 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@3c45aa8 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-05 20:29:16.945  1112  1112 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-05 20:29:16.952   464   464 D Zygote  : Forked child process 27950
+10-05 20:29:16.953   969  1111 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda12@f91d266
+10-05 20:29:16.960 27950 27950 I Zygote  : Process 27950 created for com.ped.mobile.review.test
+10-05 20:29:16.961 27950 27950 I ile.review.test: Late-enabling -Xcheck:jni
+10-05 20:29:17.003 27950 27950 I ile.review.test: Using CollectorTypeCMC GC.
+10-05 20:29:17.008   536   562 I adbd    : jdwp connection from 27950
+10-05 20:29:17.011 27904 27904 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@26c7dfc in: PAUSED
+10-05 20:29:17.011 27904 27904 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@26c7dfc
+10-05 20:29:17.036 27950 27950 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-05 20:29:17.066  1112  1112 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-05 20:29:17.127  1112  1112 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-05 20:29:17.171   686   869 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+10-05 20:29:17.205 27950 27950 I ActivityThread: Relaunch all activities: onCoreSettingsChange
+10-05 20:29:17.211 27950 27950 D CompatChangeReporter: Compat change id reported: 242716250; UID 10254; state: ENABLED
+10-05 20:29:17.278 27950 27950 D nativeloader: Configuring clns-9 for other apk /data/app/~~iDAILAuGEE9wB1dmv7a5qw==/com.ped.mobile.review.test-wuz9jbKD4g3XveRFch50Rg==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~iDAILAuGEE9wB1dmv7a5qw==/com.ped.mobile.review.test-wuz9jbKD4g3XveRFch50Rg==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.ped.mobile.review.test
+10-05 20:29:17.287 27950 27950 V GraphicsEnvironment: Currently set values for:
+10-05 20:29:17.288 27950 27950 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-05 20:29:17.288 27950 27950 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-05 20:29:17.288 27950 27950 V GraphicsEnvironment: com.ped.mobile.review.test is not listed in per-application setting
+10-05 20:29:17.288 27950 27950 V GraphicsEnvironment: ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+10-05 20:29:17.288 27950 27950 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+10-05 20:29:17.288 27950 27950 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-05 20:29:17.328 27950 27950 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-05 20:29:17.359 27950 27950 E ile.review.test: Invalid resource ID 0x00000000.
+10-05 20:29:17.366 27950 27950 D DesktopExperienceFlags: Toggle override initialized to: false
+10-05 20:29:17.366 27950 27950 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-05 20:29:17.376 27950 27965 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+10-05 20:29:17.377 27950 27965 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+10-05 20:29:17.396 27950 27965 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-05 20:29:17.399 27950 27965 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-05 20:29:17.427 27950 27950 W HWUI    : Unknown dataspace 0
+10-05 20:29:17.474 27950 27950 D VRI[InstrumentationActivityInvoker$EmptyActivity]: WindowInsets changed: 1080x2400 statusBars:[0,69,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,69,0,92]
+10-05 20:29:17.476   533   774 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+10-05 20:29:17.477 27950 27950 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda12@4f7c37
+10-05 20:29:17.477  1112  1112 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-05 20:29:17.490   533   592 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10254 pid=0
+10-05 20:29:17.490   533   592 D libbinder.PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10254 => denied (82 us)
+10-05 20:29:17.491   533   592 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10254 pid=0
+10-05 20:29:17.491   533   592 D libbinder.PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10254 => denied (907 us)
+10-05 20:29:17.491   533   592 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10254 pid=0
+10-05 20:29:17.491   533   592 D libbinder.PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10254 => denied (207 us)
+10-05 20:29:17.526   686  1021 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10254 pid=0
+10-05 20:29:17.526   686  1021 D libbinder.PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10254 => denied (325 us)
+10-05 20:29:17.526   686  1021 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10254 pid=0
+10-05 20:29:17.526   686  1021 D libbinder.PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10254 => denied (25 us)
+10-05 20:29:17.526   686  1021 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10254 pid=0
+10-05 20:29:17.527   686  1021 D libbinder.PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10254 => denied (606 us)
+10-05 20:29:17.539 25817 25817 D ViewRootImpl: Skipping stats log for color mode
+10-05 20:29:17.612 27904 27904 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+10-05 20:29:17.642  1112  1112 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-05 20:29:17.702   686   834 I ImeTracker: com.ped.mobile:9edcba85: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+10-05 20:29:17.704  1458  1458 I SubtypeOperator: SubtypeOperator$1.onUnbindInput():43
+10-05 20:29:17.704  1458  1458 I SubtypeOperator: SubtypeOperator$1.onBindInput():33
+10-05 20:29:17.704  1458  1458 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2404
+10-05 20:29:17.704  1458  1458 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1552 onStartInput(EditorInfo{EditorInfo{packageName=com.ped.mobile, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-05 20:29:17.704  1458  1458 W LatinInputMethodServiceBase: LatinInputMethodServiceBase.updateInputViewCoverNavigation():365 Null input view, cannot update padding!
+10-05 20:29:17.715 25817 25817 I ImeTracker: com.ped.mobile:9edcba85: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-05 20:29:17.719  1458 27563 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+10-05 20:29:17.728  1458 27563 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+10-05 20:29:17.738 27904 27904 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+10-05 20:29:17.740   686  1021 I ImeTracker: system_server:32fcc610: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false
+10-05 20:29:17.755 27904 27904 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@26c7dfc in: STOPPED
+10-05 20:29:17.757   686   734 I ImeTracker: system_server:32fcc610: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-05 20:29:17.758 27904 27904 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@26c7dfc
+10-05 20:29:17.878 27904 27904 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+10-05 20:29:17.911 27904 27928 D HWUI    : endAllActiveAnimators on 0xb400006f10843550 (UnprojectedRipple) with handle 0xb400006e60842b10
+10-05 20:29:17.916 27904 27904 D ViewRootImpl: Skipping stats log for color mode
+10-05 20:29:17.940 27904 27904 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@26c7dfc in: DESTROYED
+10-05 20:29:17.940 27904 27904 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-05 20:29:17.943 27904 27904 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+10-05 20:29:17.945 27904 27904 D ViewRootImpl: Skipping stats log for color mode
+10-05 20:29:17.973  1112  1112 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-05 20:29:17.990  1112  1112 D RecentsView: onTaskRemoved: 120, not handling task stack changes
+10-05 20:29:17.990  1112  1112 D RecentsView: onTaskRemoved: 120, not handling task stack changes
+10-05 20:29:17.990   969  1111 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+10-05 20:29:17.991   563   677 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+10-05 20:29:17.991   563   677 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+10-05 20:29:17.996 27904 27925 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.junit4.EspressoLink@60c8b59]
+10-05 20:29:18.004 27904 27925 I TestRunner: finished: offlinePickerKeepsSavedQueueSnapshotAndAccountIsolation(com.ped.mobile.inspection.PedVoyageTest)

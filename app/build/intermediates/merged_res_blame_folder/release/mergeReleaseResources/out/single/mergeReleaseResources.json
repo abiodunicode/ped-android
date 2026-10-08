@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.ped.mobile.app-release-57:/font_inter_bold.ttf.flat",
+        "source": "com.ped.mobile.app-main-58:/font/inter_bold.ttf"
+    },
+    {
+        "merged": "com.ped.mobile.app-release-57:/drawable-nodpi_ped_logo.png.flat",
+        "source": "com.ped.mobile.app-main-58:/drawable-nodpi/ped_logo.png"
+    },
+    {
+        "merged": "com.ped.mobile.app-release-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.ped.mobile.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.ped.mobile.app-release-57:/font_inter_medium.ttf.flat",
+        "source": "com.ped.mobile.app-main-58:/font/inter_medium.ttf"
+    },
+    {
+        "merged": "com.ped.mobile.app-release-57:/font_inter_semibold.ttf.flat",
+        "source": "com.ped.mobile.app-main-58:/font/inter_semibold.ttf"
+    },
+    {
+        "merged": "com.ped.mobile.app-release-57:/xml_file_paths.xml.flat",
+        "source": "com.ped.mobile.app-main-58:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.ped.mobile.app-release-57:/font_inter_regular.ttf.flat",
+        "source": "com.ped.mobile.app-main-58:/font/inter_regular.ttf"
+    }
+]

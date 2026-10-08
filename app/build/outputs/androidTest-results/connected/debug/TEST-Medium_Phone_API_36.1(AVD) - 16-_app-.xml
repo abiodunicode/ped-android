@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="1" failures="0" errors="0" skipped="0" time="5.419" timestamp="2026-10-05T19:29:20" hostname="localhost">
+  <testsuite name="com.ped.mobile.inspection.PedVoyageTest" tests="1" failures="0" errors="0" skipped="0" time="4.069" timestamp="2026-10-05T19:29:20" hostname="localhost">
+    <properties>
+      <property name="device" value="Medium_Phone_API_36.1(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="offlinePickerKeepsSavedQueueSnapshotAndAccountIsolation" classname="com.ped.mobile.inspection.PedVoyageTest" time="4.069" />
+  </testsuite>
+</testsuites>

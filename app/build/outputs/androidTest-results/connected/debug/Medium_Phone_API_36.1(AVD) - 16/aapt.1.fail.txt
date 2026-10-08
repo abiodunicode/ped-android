@@ -1,0 +1,115 @@
+EXECUTING: /Users/mac/Library/Android/sdk/build-tools/36.0.0/aapt dump badging /Users/mac/Documents/dev/2026/ped/ped-android/app/build/outputs/apk/debug/app-debug.apk
+CURRENT_WORKING_DIRECTORY: /Users/mac/Documents/dev/2026/ped/ped-android
+START_TIME: 2026-10-05 20:29:19.357
+START_TIME-NANOS: 2026-10-05 20:29:19.357219000
+ENVIRONMENT:
+
+*****************************************
+STDOUT/STDERR BELOW
+===================
+10-05 20:29:19.390 27153 74288717 W ResourceType: No known package when getting value for resource number 0x01080093
+10-05 20:29:19.390 27153 74288717 W ResourceType: No known package when getting value for resource number 0x01080093
+10-05 20:29:19.390 27153 74288717 W ResourceType: No known package when getting value for resource number 0x01080093
+10-05 20:29:19.390 27153 74288717 W ResourceType: No known package when getting value for resource number 0x01080093
+10-05 20:29:19.390 27153 74288717 W ResourceType: No known package when getting value for resource number 0x01080093
+10-05 20:29:19.390 27153 74288717 W ResourceType: No known package when getting value for resource number 0x01080093
+10-05 20:29:19.390 27153 74288717 W ResourceType: No known package when getting value for resource number 0x01080093
+10-05 20:29:19.390 27153 74288717 W ResourceType: No known package when getting value for resource number 0x01080093
+AndroidManifest.xml:19: error: ERROR getting 'android:icon' attribute: attribute value reference does not exist
+package: name='com.ped.mobile.review' versionCode='1' versionName='1.0.0' platformBuildVersionName='14' platformBuildVersionCode='34' compileSdkVersion='34' compileSdkVersionCodename='14'
+sdkVersion:'26'
+targetSdkVersion:'34'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='com.ped.mobile.review.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+application-label:'PED Mobile'
+application-label-af:'PED Mobile'
+application-label-am:'PED Mobile'
+application-label-ar:'PED Mobile'
+application-label-as:'PED Mobile'
+application-label-az:'PED Mobile'
+application-label-be:'PED Mobile'
+application-label-bg:'PED Mobile'
+application-label-bn:'PED Mobile'
+application-label-bs:'PED Mobile'
+application-label-ca:'PED Mobile'
+application-label-cs:'PED Mobile'
+application-label-da:'PED Mobile'
+application-label-de:'PED Mobile'
+application-label-el:'PED Mobile'
+application-label-en-AU:'PED Mobile'
+application-label-en-CA:'PED Mobile'
+application-label-en-GB:'PED Mobile'
+application-label-en-IN:'PED Mobile'
+application-label-en-XC:'PED Mobile'
+application-label-es:'PED Mobile'
+application-label-es-US:'PED Mobile'
+application-label-et:'PED Mobile'
+application-label-eu:'PED Mobile'
+application-label-fa:'PED Mobile'
+application-label-fi:'PED Mobile'
+application-label-fr:'PED Mobile'
+application-label-fr-CA:'PED Mobile'
+application-label-gl:'PED Mobile'
+application-label-gu:'PED Mobile'
+application-label-hi:'PED Mobile'
+application-label-hr:'PED Mobile'
+application-label-hu:'PED Mobile'
+application-label-hy:'PED Mobile'
+application-label-in:'PED Mobile'
+application-label-is:'PED Mobile'
+application-label-it:'PED Mobile'
+application-label-iw:'PED Mobile'
+application-label-ja:'PED Mobile'
+application-label-ka:'PED Mobile'
+application-label-kk:'PED Mobile'
+application-label-km:'PED Mobile'
+application-label-kn:'PED Mobile'
+application-label-ko:'PED Mobile'
+application-label-ky:'PED Mobile'
+application-label-lo:'PED Mobile'
+application-label-lt:'PED Mobile'
+application-label-lv:'PED Mobile'
+application-label-mk:'PED Mobile'
+application-label-ml:'PED Mobile'
+application-label-mn:'PED Mobile'
+application-label-mr:'PED Mobile'
+application-label-ms:'PED Mobile'
+application-label-my:'PED Mobile'
+application-label-nb:'PED Mobile'
+application-label-ne:'PED Mobile'
+application-label-nl:'PED Mobile'
+application-label-or:'PED Mobile'
+application-label-pa:'PED Mobile'
+application-label-pl:'PED Mobile'
+application-label-pt:'PED Mobile'
+application-label-pt-BR:'PED Mobile'
+application-label-pt-PT:'PED Mobile'
+application-label-ro:'PED Mobile'
+application-label-ru:'PED Mobile'
+application-label-si:'PED Mobile'
+application-label-sk:'PED Mobile'
+application-label-sl:'PED Mobile'
+application-label-sq:'PED Mobile'
+application-label-sr:'PED Mobile'
+application-label-sr-Latn:'PED Mobile'
+application-label-sv:'PED Mobile'
+application-label-sw:'PED Mobile'
+application-label-ta:'PED Mobile'
+application-label-te:'PED Mobile'
+application-label-th:'PED Mobile'
+application-label-tl:'PED Mobile'
+application-label-tr:'PED Mobile'
+application-label-uk:'PED Mobile'
+application-label-ur:'PED Mobile'
+application-label-uz:'PED Mobile'
+application-label-vi:'PED Mobile'
+application-label-zh-CN:'PED Mobile'
+application-label-zh-HK:'PED Mobile'
+application-label-zh-TW:'PED Mobile'
+application-label-zu:'PED Mobile'
+===================
+END_TIME: 2026-10-05 20:29:19.394
+END_TIME-NANOS: 2026-10-05 20:29:19.394191000
+DURATION: 36ms
+EXIT CODE: 1

@@ -1,0 +1,11 @@
+{
+  "source": "chassis example.json",
+  "source_sha256": "63620a123f266874fb94cb40d267d8e0d36edd128f6162f48ed6fb0f24459c99",
+  "source_rows": 391494,
+  "distinct_normalized": 389543,
+  "indexed_cargo_ids": 388903,
+  "excluded_distinct": 640,
+  "duplicate_rows": 1951,
+  "asset_sha256": "befae910bac8b42afc7ca595ce31c7e893d4d295c4f5483439157f97e795643d",
+  "policy": "Uppercase and trim; 6\u201325 ASCII letters/digits including a digit. No punctuation removal or character correction."
+}

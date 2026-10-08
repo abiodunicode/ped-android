@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ped.mobile.CargoMatchingTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-07T19:11:03.518Z" hostname="Macs-MacBook-Pro.local" time="0.057">
+  <properties/>
+  <testcase name="emptyPhotoDoesNotInventNumberAndWorkIsBounded" classname="com.ped.mobile.CargoMatchingTest" time="0.033"/>
+  <testcase name="referenceSelectsChassisAmongUnlabelledShipmentNumbers" classname="com.ped.mobile.CargoMatchingTest" time="0.014"/>
+  <testcase name="explicitChassisLabelOutranksKnownBookingNumber" classname="com.ped.mobile.CargoMatchingTest" time="0.0"/>
+  <testcase name="multipleExactNumbersRemainAvailableForReview" classname="com.ped.mobile.CargoMatchingTest" time="0.003"/>
+  <testcase name="missingReferenceStillAllowsNewChassis" classname="com.ped.mobile.CargoMatchingTest" time="0.0"/>
+  <testcase name="shortNewChassisWithExplicitLabelRemainsAllowed" classname="com.ped.mobile.CargoMatchingTest" time="0.001"/>
+  <testcase name="spacedAndNumericCargoIdsAreRecognised" classname="com.ped.mobile.CargoMatchingTest" time="0.0"/>
+  <testcase name="confusedCharacterIsOnlySuggestedNotSilentlyReplaced" classname="com.ped.mobile.CargoMatchingTest" time="0.001"/>
+  <testcase name="bookingOnSameLineDoesNotOverrideLabelledChassis" classname="com.ped.mobile.CargoMatchingTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

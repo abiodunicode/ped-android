@@ -1,0 +1,8 @@
+com.ped.mobile.app-pngs-0 /Users/mac/Documents/dev/2026/ped/ped-android/app/build/generated/res/pngs/debug
+com.ped.mobile.app-resValues-1 /Users/mac/Documents/dev/2026/ped/ped-android/app/build/generated/res/resValues/debug
+com.ped.mobile.app-updated_navigation_xml-2 /Users/mac/Documents/dev/2026/ped/ped-android/app/build/generated/updated_navigation_xml/debug
+com.ped.mobile.app-packageDebugResources-3 /Users/mac/Documents/dev/2026/ped/ped-android/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.ped.mobile.app-packageDebugResources-4 /Users/mac/Documents/dev/2026/ped/ped-android/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.ped.mobile.app-debug-5 /Users/mac/Documents/dev/2026/ped/ped-android/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.ped.mobile.app-debug-6 /Users/mac/Documents/dev/2026/ped/ped-android/app/src/debug/res
+com.ped.mobile.app-main-7 /Users/mac/Documents/dev/2026/ped/ped-android/app/src/main/res

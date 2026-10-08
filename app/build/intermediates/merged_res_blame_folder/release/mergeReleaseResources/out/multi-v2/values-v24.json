@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.ped.mobile.app-mergeReleaseResources-55:/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/Users/mac/.gradle/caches/9.3.1/transforms/5d6154b2e6d53023b6a70fa559d9c39a/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                }
+            ]
+        }
+    ]
+}

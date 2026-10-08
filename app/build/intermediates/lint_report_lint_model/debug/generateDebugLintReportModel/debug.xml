@@ -1,0 +1,32 @@
+<variant
+    name="debug"
+    package="com.ped.mobile"
+    minSdkVersion="26"
+    targetSdkVersion="34"
+    debuggable="true"
+    mergedManifest="build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml"
+    manifestMergeReport="build/outputs/logs/manifest-merger-debug-report.txt"
+    proguardFiles="build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-9.1.0"
+    partialResultsDir="build/intermediates/lint_partial_results/debug/lintAnalyzeDebug/out">
+  <buildFeatures/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src/main/AndroidManifest.xml:src/debug/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/debug/java:src/main/kotlin:src/debug/kotlin"
+        resDirectories="src/main/res:src/debug/res"
+        assetsDirectories="src/main/assets:src/debug/assets"
+        keepRulesDirectories="src/main/keepRules:src/debug/keepRules"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="build/intermediates/javac/debug/compileDebugJavaWithJavac/classes:build/tmp/kotlin-classes/debug:build/intermediates/compile_and_runtime_r_class_jar/debug/processDebugResources/R.jar"
+      type="MAIN"
+      applicationId="com.ped.mobile"
+      generatedSourceFolders="build/generated/ap_generated_sources/debug/out:build/generated/source/buildConfig/debug"
+      generatedResourceFolders="build/generated/res/resValues/debug"
+      desugaredMethodsFiles="/Users/mac/.gradle/caches/9.3.1/transforms/3467369d5e25d438b48e2315ca19b1d0/transformed/D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

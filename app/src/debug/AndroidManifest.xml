@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Local emulator/test servers only. Release retains HTTPS-only defaults. -->
+    <application android:usesCleartextTraffic="true">
+        <activity android:name="com.ped.mobile.inspection.InspectionHarnessActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.ped.mobile.PedHarnessActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>
