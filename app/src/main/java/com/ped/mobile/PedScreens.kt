@@ -178,7 +178,8 @@ import java.time.format.DateTimeFormatter
             SectionHeading("02", "Photo evidence", "$photos of ${schema.imageFields.size} photos added · optional views can be left empty.")
             schema.imageFields.forEach { field ->
                 val source = imageValues[field.key].orEmpty()
-                val bitmap by produceState<android.graphics.Bitmap?>(null, source) { value = withContext(Dispatchers.Default) { source.decodeBitmap() } }
+                val photo by rememberPhotoPreview(source)
+                val bitmap = (photo as? PhotoPreviewState.Ready)?.bitmap
                 val invalid = showValidation && field.required && source.isBlank()
                 OutlinedCard(Modifier.fillMaxWidth().onGloballyPositioned { offsets[field.key] = it.positionInParent().y.toInt() }) {
                     Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -189,8 +190,9 @@ import java.time.format.DateTimeFormatter
                                 Text(if (source.isNotBlank()) "Photo added" else if (field.required) "Required photo" else "Optional photo", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                             }
                         }
-                        if (bitmap == null && source.isNotBlank()) Text("Photo unavailable. Retake the photo if needed.")
-                    bitmap?.let { Image(it.asImageBitmap(), contentDescription = "${field.label} preview", modifier = Modifier.fillMaxWidth().height(96.dp), contentScale = ContentScale.Fit) }
+                        if (photo == PhotoPreviewState.Loading) PhotoLoading(Modifier.fillMaxWidth().height(96.dp))
+                        if (photo == PhotoPreviewState.Unavailable && source.isNotBlank()) Text("Photo unavailable. Retake the photo if needed.")
+                        bitmap?.let { Image(it.asImageBitmap(), contentDescription = "${field.label} preview", modifier = Modifier.fillMaxWidth().height(96.dp), contentScale = ContentScale.Fit) }
                         if (source.isNotBlank()) FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             TextButton(onClick = { preview = field.label to source }, modifier = Modifier.heightIn(min = 48.dp)) { Text("View full photo") }
                             if (!field.required) TextButton(onClick = { removePhoto = field }, enabled = !saving, modifier = Modifier.heightIn(min = 48.dp)) { Text("Remove photo") }
@@ -308,11 +310,34 @@ import java.time.format.DateTimeFormatter
     }
 }
 
+private sealed interface PhotoPreviewState {
+    data object Loading : PhotoPreviewState
+    data object Unavailable : PhotoPreviewState
+    data class Ready(val bitmap: android.graphics.Bitmap) : PhotoPreviewState
+}
+
+@Composable private fun rememberPhotoPreview(source: String): State<PhotoPreviewState> = key(source) {
+    produceState<PhotoPreviewState>(if (source.isBlank()) PhotoPreviewState.Unavailable else PhotoPreviewState.Loading) {
+        value = withContext(Dispatchers.IO) {
+            source.decodeBitmap()?.let { PhotoPreviewState.Ready(it) } ?: PhotoPreviewState.Unavailable
+        }
+    }
+}
+
+@Composable private fun PhotoLoading(modifier: Modifier = Modifier) {
+    Row(modifier.semantics { liveRegion = LiveRegionMode.Polite }, horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically) {
+        CircularProgressIndicator(Modifier.size(24.dp), strokeWidth = 2.dp)
+        Spacer(Modifier.width(12.dp))
+        Text("Loading photo…", style = MaterialTheme.typography.bodyMedium)
+    }
+}
+
 @OptIn(ExperimentalLayoutApi::class)
 @Composable internal fun PhotoReview(label: String, source: String, onClose: () -> Unit) {
-    val bitmap by produceState<android.graphics.Bitmap?>(null, source) { value = withContext(Dispatchers.IO) { source.decodeBitmap() } }
-    var scale by remember { mutableStateOf(1f) }
-    var offset by remember { mutableStateOf(androidx.compose.ui.geometry.Offset.Zero) }
+    val photo by rememberPhotoPreview(source)
+    val bitmap = (photo as? PhotoPreviewState.Ready)?.bitmap
+    var scale by remember(source) { mutableStateOf(1f) }
+    var offset by remember(source) { mutableStateOf(androidx.compose.ui.geometry.Offset.Zero) }
     Dialog(onDismissRequest = onClose, properties = DialogProperties(usePlatformDefaultWidth = false)) {
         Surface(Modifier.fillMaxSize()) {
             Column(Modifier.fillMaxSize().systemBarsPadding()) {
@@ -320,14 +345,15 @@ import java.time.format.DateTimeFormatter
                     Text(label, Modifier.weight(1f), style = MaterialTheme.typography.titleMedium)
                     TextButton(onClick = onClose) { Text("Close") }
                 }
-                Box(Modifier.weight(1f).fillMaxWidth().clipToBounds().pointerInput(Unit) { detectTransformGestures { _, pan, zoom, _ -> scale = (scale * zoom).coerceIn(1f, 5f); offset = if (scale == 1f) androidx.compose.ui.geometry.Offset.Zero else offset + pan } }, contentAlignment = Alignment.Center) {
-                    if (bitmap == null) Text("Photo unavailable. Close and retake the photo if needed.")
+                Box(Modifier.weight(1f).fillMaxWidth().clipToBounds().pointerInput(source, bitmap != null) { if (bitmap != null) detectTransformGestures { _, pan, zoom, _ -> scale = (scale * zoom).coerceIn(1f, 5f); offset = if (scale == 1f) androidx.compose.ui.geometry.Offset.Zero else offset + pan } }, contentAlignment = Alignment.Center) {
+                    if (photo == PhotoPreviewState.Loading) PhotoLoading(Modifier.padding(24.dp))
+                    if (photo == PhotoPreviewState.Unavailable) Text("Photo unavailable. Close and retake the photo if needed.", Modifier.padding(24.dp))
                     bitmap?.let { Image(it.asImageBitmap(), label, modifier = Modifier.fillMaxSize().graphicsLayer(scaleX = scale, scaleY = scale, translationX = offset.x, translationY = offset.y), contentScale = ContentScale.Fit) }
                 }
                 FlowRow(Modifier.fillMaxWidth().padding(16.dp), horizontalArrangement = Arrangement.Center) {
-                    TextButton(onClick = { scale = (scale - .5f).coerceAtLeast(1f) }) { Text("Zoom out") }
-                    TextButton(onClick = { scale = 1f; offset = androidx.compose.ui.geometry.Offset.Zero }) { Text("Reset") }
-                    TextButton(onClick = { scale = (scale + .5f).coerceAtMost(5f) }) { Text("Zoom in") }
+                    TextButton(onClick = { scale = (scale - .5f).coerceAtLeast(1f); if (scale == 1f) offset = androidx.compose.ui.geometry.Offset.Zero }, enabled = bitmap != null && scale > 1f, modifier = Modifier.heightIn(min = 48.dp)) { Text("Zoom out") }
+                    TextButton(onClick = { scale = 1f; offset = androidx.compose.ui.geometry.Offset.Zero }, enabled = bitmap != null, modifier = Modifier.heightIn(min = 48.dp)) { Text("Reset") }
+                    TextButton(onClick = { scale = (scale + .5f).coerceAtMost(5f) }, enabled = bitmap != null && scale < 5f, modifier = Modifier.heightIn(min = 48.dp)) { Text("Zoom in") }
                 }
             }
         }

@@ -714,7 +714,9 @@ internal fun String.decodeBitmap(): Bitmap? {
         val path = removePrefix("pedfile:")
         val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
         BitmapFactory.decodeFile(path, bounds)
-        val options = BitmapFactory.Options()
+        if (bounds.outWidth <= 0 || bounds.outHeight <= 0) return@runCatching null
+        // Android's default is zero; our size calculation needs a positive divisor.
+        val options = BitmapFactory.Options().apply { inSampleSize = 1 }
         while (bounds.outWidth / options.inSampleSize > 1800 || bounds.outHeight / options.inSampleSize > 1800) options.inSampleSize *= 2
         BitmapFactory.decodeFile(path, options)
     }.getOrNull()
@@ -727,7 +729,8 @@ internal fun String.decodeBitmap(): Bitmap? {
         val bytes = Base64.decode(base64, Base64.DEFAULT)
         val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
         BitmapFactory.decodeByteArray(bytes, 0, bytes.size, bounds)
-        val options = BitmapFactory.Options()
+        if (bounds.outWidth <= 0 || bounds.outHeight <= 0) return@runCatching null
+        val options = BitmapFactory.Options().apply { inSampleSize = 1 }
         while (bounds.outWidth / options.inSampleSize > 900 || bounds.outHeight / options.inSampleSize > 900) options.inSampleSize *= 2
         BitmapFactory.decodeByteArray(bytes, 0, bytes.size, options)
     }.getOrNull()
