@@ -26,4 +26,33 @@ class WorkflowAccessTest {
             assertEquals(AppScreen.ACCOUNT, user.homeScreen())
         }
     }
+
+    @Test fun teamAdminPermissionsDoNotUnlockTheOtherWorkflow() {
+        val pedAdmin = InspectionAccount(3, "ped-admin@test.local", setOf(
+            "ped.capture", "offdock.capture", "container.capture", "scrap.capture",
+            "records.correct_chassis", "records.assign_voyage", "duplicates.resolve",
+            "voyages.manage", "catalogue.manage"
+        ))
+        val tallyAdmin = InspectionAccount(4, "tally-admin@test.local", setOf(
+            "inspections.view", "inspections.create", "inspections.edit", "inspections.complete",
+            "inspections.manage_all", "voyages.manage", "catalogue.manage"
+        ))
+        assertEquals(AppScreen.CAPTURE, pedAdmin.homeScreen())
+        assertTrue(CaptureKind.entries.all { pedAdmin.canCapture(it) })
+        assertFalse(pedAdmin.allowsScreen(AppScreen.INSPECTION))
+        assertEquals(AppScreen.INSPECTION, tallyAdmin.homeScreen())
+        assertFalse(tallyAdmin.allowsScreen(AppScreen.CAPTURE))
+        assertFalse(tallyAdmin.canCaptureEvidence())
+    }
+
+    @Test fun generalAdminUsesExpandedApiPermissionsForBothWorkflows() {
+        // Both APIs expand system.admin into the complete permission list.
+        val general = InspectionAccount(5, "general@test.local", setOf(
+            "system.admin", "ped.capture", "offdock.capture", "container.capture",
+            "scrap.capture", "inspections.view", "inspections.create", "inspections.manage_all"
+        ))
+        assertTrue(general.allowsScreen(AppScreen.CAPTURE))
+        assertTrue(general.allowsScreen(AppScreen.INSPECTION))
+        assertTrue(CaptureKind.entries.all { general.canCapture(it) })
+    }
 }
